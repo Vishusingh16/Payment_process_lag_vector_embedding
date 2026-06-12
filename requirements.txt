@@ -1,0 +1,7 @@
+faiss-cpu
+sentence-transformers
+langchain
+langchain-community
+fastapi
+uvicorn
+python-dotenv

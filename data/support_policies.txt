@@ -1,0 +1,120 @@
+[PAYMENT_FAILURE]
+
+Issue: UPI Timeout
+
+Description:
+The customer completed the UPI payment, but the merchant did not receive confirmation.
+
+Resolution:
+Wait up to 30 minutes for automatic reconciliation.
+If the payment remains unresolved after 24 hours, raise a support ticket.
+
+[PAYMENT_FAILURE]
+
+Issue: Insufficient Balance
+
+Description:
+The customer's bank account does not contain sufficient funds.
+
+Resolution:
+Ask the customer to verify account balance and retry the payment.
+No amount is debited in this scenario.
+
+[PAYMENT_FAILURE]
+
+Issue: Card Authentication Failed
+
+Description:
+The customer failed OTP verification or 3D Secure authentication.
+
+Resolution:
+Retry the transaction with correct authentication details.
+After multiple failures, contact the issuing bank.
+
+[PAYMENT_FAILURE]
+
+Issue: Bank Server Unavailable
+
+Description:
+The issuing bank's systems are temporarily unavailable.
+
+Resolution:
+Wait a few minutes and retry the transaction.
+If the issue persists, use an alternative payment method.
+
+[REFUND]
+
+Issue: Refund Processing Time
+
+Description:
+A merchant has initiated a refund request.
+
+Resolution:
+Refunds are generally processed within 5-7 business days depending on the payment method and bank.
+
+[REFUND]
+
+Issue: Failed Refund
+
+Description:
+The refund attempt was rejected by the bank.
+
+Resolution:
+The payment gateway retries the refund automatically.
+If the refund continues to fail, the support team contacts the customer.
+
+[DISPUTE]
+
+Issue: Unauthorized Transaction
+
+Description:
+The customer claims the transaction was not authorized.
+
+Resolution:
+The customer should immediately report the issue.
+The dispute team reviews authentication logs and transaction history.
+
+[DISPUTE]
+
+Issue: Chargeback Initiated
+
+Description:
+The issuing bank has initiated a chargeback against the transaction.
+
+Resolution:
+The merchant must provide supporting evidence within the specified timeline.
+The dispute team evaluates the evidence before responding.
+
+[PAYMENT_FAILURE]
+
+Issue: Payment Marked Failed but Amount Debited
+
+Description:
+The customer sees a failed transaction status but money has been deducted from the account.
+
+Resolution:
+Wait for reconciliation.
+Most transactions are automatically reversed within 5 business days.
+If not reversed, raise a support request with transaction details.
+
+[DISPUTE]
+
+Issue: Product Not Received
+
+Description:
+The customer claims that the purchased product was never delivered.
+
+Resolution:
+The merchant should provide shipment tracking details and proof of delivery.
+If delivery cannot be verified, a refund may be issued.
+
+[REFUND]
+
+Issue: Duplicate Payment
+
+Description:
+The customer was charged twice for the same order.
+
+Resolution:
+Verify transaction records.
+One of the duplicate transactions should be refunded after validation.
